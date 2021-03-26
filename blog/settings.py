@@ -34,6 +34,7 @@ ALLOWED_HOSTS = env['ALLOWED_HOSTS'].split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
