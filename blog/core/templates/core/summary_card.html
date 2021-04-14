@@ -1,12 +1,12 @@
-<div>
-  <h2>{{ post_metadata.title |first}}</h2>
+<div class="card w-medium pd-medium">
+  <h2 class="mg-none">{{ post_metadata.title |first }}</h2>
 
-  <p>{{ post_metadata.summary |first}}</p>
+  <p>{{ post_metadata.summary |first }}</p>
 
-  <diV>
-    <p>{{ post_metadata.author |first}}</p>
-    <p>{{ post_metadata.date |first}}</p>
+  <div class="flex f-end">
+    <p class="mg-none mg-r-medium">{{ post_metadata.author |first }}</p>
+    <p class="mg-none mg-r-medium">{{ post_metadata.date |first }}</p>
 
-    <a>Leia mais</a>
+    <a class="mg-none mg-r-medium" href="#">Leia na integra</a>
   </div>
 </div>

@@ -8,16 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{% endblock %}</title>
 
+  <link type="text/css" rel="stylesheet" href="{% static 'core/styles.css' %}">
+
   {% block css %}{% endblock %}
 </head>
 <body>
-  <div>
+  <div class="container w-large w-al-center">
     {% block content %}{% endblock %}
 
-    <div>
-      <div>
-        <a>O que é AO ?</a>
-        <a>Nosso Github</a>
+    <div class="footer card pd-small txt-center w-large ">
+      <div class="flex f-around">
+        <a href="#">O que é AO ?</a>
+        <a href="#">Nosso Github</a>
       </div>
 
       <p>AO @ 2021</p>
