@@ -3,10 +3,13 @@
 
   <p>{{ post_metadata.summary |first }}</p>
 
-  <div class="flex f-end">
-    <p class="mg-none mg-r-medium">{{ post_metadata.author |first }}</p>
-    <p class="mg-none mg-r-medium">{{ post_metadata.date |first }}</p>
+  <hr>
 
-    <a class="mg-none mg-r-medium" href="#">Leia na integra</a>
+  <div class="dsp-flex f-around">
+    <p class="mg-none mg-r-medium fnt-small">{{ post_metadata.author |first }}</p>
+
+    <a class="mg-none mg-r-medium fnt-medium" href="#">Leia na integra</a>
+
+    <p class="mg-none mg-r-medium fnt-small">{{ post_metadata.date |first }}</p>
   </div>
 </div>
