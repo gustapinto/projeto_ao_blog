@@ -6,6 +6,8 @@
   <div class="w-medium w-al-center">
     {% for post in posts %}
       {% include 'core/summary_card.html' with post_metadata=post.metadata %}
+
+      <div class="dv-h-large"></div>
     {% endfor %}
   </div>
 {% endblock %}

@@ -1,15 +1,15 @@
-<div class="card w-medium pd-medium">
+<div class="card bx-shadow w-medium pd-medium bg-white">
   <h2 class="mg-none">{{ post_metadata.title |first }}</h2>
 
   <p>{{ post_metadata.summary |first }}</p>
 
-  <hr>
+  <hr class="bg-light-grey">
 
   <div class="dsp-flex f-around">
-    <p class="mg-none mg-r-medium fnt-small">{{ post_metadata.author |first }}</p>
+    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post_metadata.author |first }}</p>
 
-    <a class="mg-none mg-r-medium fnt-medium" href="#">Leia na integra</a>
+    <a class="mg-none mg-r-medium fnt-medium fnt-bold txt-d-none txt-grey click" href="#">Leia na integra</a>
 
-    <p class="mg-none mg-r-medium fnt-small">{{ post_metadata.date |first }}</p>
+    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post_metadata.date |first }}</p>
   </div>
 </div>
