@@ -7,7 +7,7 @@ from blog.settings import PROJECT_ROOT
 
 class MarkdownParser:
     def __init__(self):
-        self.resource_files_path = PROJECT_ROOT / 'core/resources/markdown'
+        self.resource_files_path = PROJECT_ROOT / 'core/static/core/markdown'
 
         markdown_files_path = Path(self.resource_files_path).rglob('*.md')
 
