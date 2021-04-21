@@ -3,13 +3,15 @@
 {% block title %}Projeto AO{% endblock %}
 
 {% block content %}
-  <div class="card pd-medium bg-green flt-l pst-fixed">
+  <div class="card pd-medium bg-green flt-l pst-fixed nav-mob">
     <a class="click fnt-bold txt-white txt-d-none" href="../">
       Voltar
     </a>
   </div>
 
-  <div class="w-medium w-al-center">
+  <div class="dv-mob-h-medium"></div>
+
+  <div class="w-medium w-al-center mg-t-medium">
     {% include 'core/cards/post.html' with post=post %}
 
     <div class="dv-h-large"></div>

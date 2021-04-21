@@ -1,11 +1,11 @@
-<div class="card bx-shadow w-medium pd-medium bg-white">
+<div class="card bx-shadow pd-medium bg-white flx-basis mg-t-medium">
   <h2 class="mg-none">{{ post_metadata.title|first }}</h2>
 
   <p>{{ post_metadata.summary|first }}</p>
 
   <hr class="bg-light-grey">
 
-  <div class="dsp-flex f-around">
+  <div class="dsp-flex flx-around">
     <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post_metadata.author|first }}</p>
 
     <a class="mg-none mg-r-medium fnt-medium fnt-bold txt-d-none txt-grey click" href="/posts/{{ post_metadata.file_name|first }}">

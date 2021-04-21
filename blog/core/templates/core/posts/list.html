@@ -3,11 +3,9 @@
 {% block title %}Projeto AO{% endblock %}
 
 {% block content %}
-  <div class="w-medium w-al-center">
+  <div class="w-large w-al-center dsp-flex flx-between flx-wrap">
     {% for post in posts %}
       {% include 'core/cards/summary.html' with post_metadata=post.metadata %}
-
-      <div class="dv-h-small"></div>
     {% endfor %}
   </div>
 {% endblock %}
