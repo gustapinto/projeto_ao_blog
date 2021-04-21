@@ -5,9 +5,9 @@
 {% block content %}
   <div class="w-medium w-al-center">
     {% for post in posts %}
-      {% include 'core/summary_card.html' with post_metadata=post.metadata %}
+      {% include 'core/cards/summary.html' with post_metadata=post.metadata %}
 
-      <div class="dv-h-large"></div>
+      <div class="dv-h-small"></div>
     {% endfor %}
   </div>
 {% endblock %}

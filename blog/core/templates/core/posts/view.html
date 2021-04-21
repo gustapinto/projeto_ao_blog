@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Projeto AO{% endblock %}
+
+{% block content %}
+  <div class="card pd-medium bg-green flt-l pst-fixed">
+    <a class="click fnt-bold txt-white txt-d-none" href="../">
+      Voltar
+    </a>
+  </div>
+
+  <div class="w-medium w-al-center">
+    {% include 'core/cards/post.html' with post=post %}
+
+    <div class="dv-h-large"></div>
+  </div>
+{% endblock %}
