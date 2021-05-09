@@ -3,7 +3,7 @@
 {% block title %}Projeto AO{% endblock %}
 
 {% block content %}
-  <div class="w-large w-al-center dsp-flex flx-between flx-wrap">
+  <div class="w-large w-al-center dsp-grid grd-cols-3 grd-cols-mob grd-gap-medium">
     {% for post in posts %}
       {% include 'core/cards/summary.html' with post_metadata=post.metadata %}
     {% endfor %}

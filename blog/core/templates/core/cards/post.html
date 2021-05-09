@@ -1,13 +1,13 @@
-<div class="card bx-shadow w-medium pd-medium bg-white">
+<div class="card w-medium pd-medium bg-white">
   <h2 class="mg-none">{{ post.metadata.title|first }}</h2>
 
   <p>{{ post.html|safe }}</p>
 
   <hr class="bg-light-grey">
 
-  <div class="dsp-flex flx-around">
-    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post.metadata.author|first }}</p>
+  <div class="dsp-grid grd-cols-2 jst-center grd-gap-large">
+    <p class="mg-none fnt-small txt-grey">{{ post.metadata.author|first }}</p>
 
-    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post.metadata.date|first }}</p>
+    <p class="mg-none fnt-small txt-grey">{{ post.metadata.date|first }}</p>
   </div>
 </div>

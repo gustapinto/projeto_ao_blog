@@ -1,17 +1,17 @@
-<div class="card bx-shadow pd-medium bg-white flx-basis mg-t-medium">
+<div class="card pd-medium bg-white">
   <h2 class="mg-none">{{ post_metadata.title|first }}</h2>
 
   <p>{{ post_metadata.summary|first }}</p>
 
   <hr class="bg-light-grey">
 
-  <div class="dsp-flex flx-around">
-    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post_metadata.author|first }}</p>
+  <div class="dsp-grid grd-cols-3 txt-center grd-gap-small">
+    <p class="mg-none fnt-small txt-grey xy-center">{{ post_metadata.author|first }}</p>
 
-    <a class="mg-none mg-r-medium fnt-medium fnt-bold txt-d-none txt-grey click" href="/posts/{{ post_metadata.file_name|first }}">
+    <a class="mg-none fnt-medium fnt-bold txt-d-none txt-grey click xy-center" href="/posts/{{ post_metadata.file_name|first }}">
       Leia na integra
     </a>
 
-    <p class="mg-none mg-r-medium fnt-small txt-grey">{{ post_metadata.date|first }}</p>
+    <p class="mg-none fnt-small txt-grey xy-center">{{ post_metadata.date|first }}</p>
   </div>
 </div>
