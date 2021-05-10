@@ -1,0 +1,3 @@
+[submodule "blog/core/static/core/ao-css"]
+	path = blog/core/static/core/ao-css
+	url = git@github.com:gustapinto/ao-css.git
